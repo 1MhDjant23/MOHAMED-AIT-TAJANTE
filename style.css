@@ -37,15 +37,15 @@ header .logo {
     color: rgb(121, 125, 6);
 }
 .logo #taj {
-    font-size: 1.4em;
-    color: #00bcd4;
+    color: #7aa4accb;
 }
 header .logo a {
     padding: 9px;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    font-size: 3em;
+    color: #d1cccce1;
 }
 
 header ul {
@@ -127,22 +127,24 @@ header ul li a:hover {
     transition: 0.6s ease-out;
 }
 .contact-button {
+    /* border-box: none; */
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
     color: #fefcfce1;
-    text-decoration:underline;
-    border-radius: 20px;
+    text-decoration: underline;
+    /* line-height: 8rem; */
+    /* border-radius: 20px; */
     font-size: 1.2em;
     transition: background-color 0.9s ease, transform 0.3s ease;
 }
 
 .contact-button:hover {
-    color: #13686c;
-    transform: scale(1.1); 
-    box-shadow: inset 0px 2px 4px rgba(60, 57, 57, 0.8), 
+    color: #568b6c;
+    /* transform: scale(1.1);  */
+    /* box-shadow: inset 0px 2px 4px rgba(60, 57, 57, 0.8), 
               inset 0px 4px 8px rgba(40, 26, 26, 0.7), 
-              inset 0px 8px 16px rgba(34, 19, 19, 0.781);
+              inset 0px 8px 16px rgba(34, 19, 19, 0.781); */
 }
 
 .section {
@@ -337,7 +339,7 @@ form {
 
 form button {
     padding: 15px 30px;
-    background-color: #44787ed7;
+    background-color: #7aa4accb;;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -347,7 +349,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #009688;
+    background-color: #568b6c;;
 }
 
 footer {
