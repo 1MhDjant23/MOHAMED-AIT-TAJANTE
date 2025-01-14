@@ -22,4 +22,4 @@ This portfolio is designed to give visitors an insight into who I am, the techno
 You can view the portfolio at::
 
    ```bash
-   mohamed-ait-tajante
+   mohamed-ait-tajante.me
