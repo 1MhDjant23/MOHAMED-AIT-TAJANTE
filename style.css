@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 body {
@@ -133,8 +135,7 @@ header ul li a:hover {
     padding: 12px 25px;
     color: #fefcfce1;
     text-decoration: underline;
-    /* line-height: 8rem; */
-    /* border-radius: 20px; */
+
     font-size: 1.2em;
     transition: background-color 0.9s ease, transform 0.3s ease;
 }
@@ -172,24 +173,17 @@ header ul li a:hover {
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+
+    width: 100%;
+    padding: 0 20px;
 }
 #about .about-content {
-    width: 100vw;
+    width: 100%;
 }
-/* .about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-} */
 
 .about-text {
     width: 60vw;
 }
-
-
 .social-icons {
     display: flex;
     justify-content: space-around;
@@ -355,12 +349,18 @@ footer {
 }
 
 .find-me {
-    /* width: 35%; */
+
     text-align: center;
 }
+
+.social-icon {
+    margin-right: 10px;
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
     .container {
+        width: 100%;
         padding: 0 10px;
     }
     
@@ -386,9 +386,16 @@ footer {
     #skills {
         grid-template-columns: 1fr 1fr;
     }
+    .social-icons {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 768px) {
+    #about .container {
+        width: 100%;
+        padding: 0 20px;
+    }
     header nav {
         flex-direction: column;
         align-items: center;
@@ -416,17 +423,16 @@ footer {
     .project-list {
         flex-direction: column;
     }
-
     .social-icons {
-        justify-content: center;
-    }
-
-    .social-icons .social-icon {
-        font-size: 25px;
+        margin-right: 20px;
     }
 }
 
 @media (max-width: 480px) {
+    #about .container {
+    width: 100%;
+    padding: 0 20px;
+    }
     .logo a {
         font-size: 20px;
     }
@@ -445,5 +451,104 @@ footer {
 
     #intro .intro-text p {
         font-size: 16px;
+    }
+}@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    header ul li {
+        margin: 0 10px;
+    }
+    #about .about-content {
+        padding: 20px;
+    }
+
+    #about .about-text {
+        text-align: center;
+    }
+
+    #about .about-text h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    #about .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    #about .about-text br {
+        display: none;
+    }
+    .intro-content {
+        flex-direction: column-reverse;
+    }
+
+    .intro-text, .intro-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-text h1 {
+        font-size: 3em;
+    }
+
+    .skills-list, .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .logo a {
+        font-size: 2em;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header ul li {
+        margin: 5px;
+    }
+
+    .intro-text h1 {
+        font-size: 2.5em;
+    }
+    #about .about-content {
+        padding: 20px;
+    }
+
+    #about .about-text {
+        text-align: center;
+    }
+
+    #about .about-text h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    #about .about-text p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    #about .about-text br {
+        display: none;
+    }
+    .section h2 {
+        font-size: 2em;
     }
 }

@@ -1,6 +1,6 @@
 
   (function(){
-     emailjs.init("ZpLa3gYmNska02rpx"); // Replace with your EmailJS user ID
+     emailjs.init("ZpLa3gYmNska02rpx");
   })();
 
   document.getElementById("contact-form").addEventListener("submit", function(event){
